@@ -4,9 +4,9 @@ using System.Text;
 
 namespace snakeke
 {
-    class HorLine
+    class HorLine : Figure
     {
-        List<Point> pList;
+        
 
         public HorLine(int xLeft,int xRight,int y,char sym)
         {
@@ -18,12 +18,6 @@ namespace snakeke
                 
             }
         }
-        public void Draw()
-        {
-            foreach (Point p in pList)
-            {
-                p.Draw();
-            }
-        }
+        
     }
 }
