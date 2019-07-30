@@ -11,13 +11,19 @@ namespace snakeke
         
         static void Main(string[] args)
         {
-            HorLine hLine = new HorLine(5, 10, 9, '*');
-            hLine.Draw();
+            HorLine upLine = new HorLine(0, 78, 0, '*');
+            upLine.Draw();
 
-            VertLine vLine = new VertLine(0, 9, 11, '*');
-            vLine.Draw();
+            HorLine downLine = new HorLine(0, 78, 24, '*');
+            downLine.Draw();
 
+            VertLine leftLine = new VertLine(0, 24, 0, '*');
+            leftLine.Draw();
             
+            VertLine rightLine = new VertLine(0, 24, 78, '*');
+            rightLine.Draw();
+
+
             Console.ReadLine();
         }
     }
